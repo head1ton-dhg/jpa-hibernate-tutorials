@@ -1,5 +1,9 @@
 package com.youwiz.onetoone.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -7,6 +11,9 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 @Table(name = "users")
 public class User implements Serializable {
 
@@ -35,10 +42,6 @@ public class User implements Serializable {
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
     private UserProfile userProfile;
-
-    public User() {
-
-    }
 
     public User(String firstName, String lastName, String email, String password) {
         this.firstName = firstName;
