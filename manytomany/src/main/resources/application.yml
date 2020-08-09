@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://54.180.138.215:3306/notesDB?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: devmysql
+    password: Devmysql1234!
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+
