@@ -59,8 +59,8 @@ public class UserProfile implements Serializable {
     private User user;
 
     public UserProfile(String phoneNumber, Gender gender, Date dateofBirth,
-                                    String address1, String address2, String street, String city,
-                                    String state, String country, String zipCode) {
+                       String address1, String address2, String street, String city,
+                       String state, String country, String zipCode) {
         this.phoneNumber = phoneNumber;
         this.gender = gender;
         this.dateofBirth = dateofBirth;
