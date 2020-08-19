@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1c811e6-0a4c-48a1-911a-f9edbdbea672" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/manytomany/src/main/java/com/youwiz/manytomany/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/manytomany/src/main/java/com/youwiz/manytomany/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manytomany/src/main/java/com/youwiz/manytomany/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/manytomany/src/main/java/com/youwiz/manytomany/model/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/one-to-one/src/main/java/com/youwiz/onetoone/model/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/one-to-one/src/main/java/com/youwiz/onetoone/model/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onetomany/src/main/java/com/youwiz/onetomany/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/onetomany/src/main/java/com/youwiz/onetomany/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onetomany/src/main/java/com/youwiz/onetomany/model/AuditModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/onetomany/src/main/java/com/youwiz/onetomany/model/AuditModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onetomany/src/main/java/com/youwiz/onetomany/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/onetomany/src/main/java/com/youwiz/onetomany/repository/CommentRepository.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fsvU0MI9ReRNaNLTWofDdCL9Tn" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ElementcollectionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elementcollection.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youwiz.elementcollection.ElementcollectionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1c811e6-0a4c-48a1-911a-f9edbdbea672" name="Default Changelist" comment="" />
+      <created>1597019626871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597019626871</updated>
+      <workItem from="1597019629716" duration="66000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
