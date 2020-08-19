@@ -1,5 +1,7 @@
 package com.youwiz.springbatchn1.config;
 
+import com.youwiz.springbatchn1.common.JpaPagingFetchItemReader;
+import com.youwiz.springbatchn1.common.QuerydslCursorItemReader;
 import com.youwiz.springbatchn1.domain.Store;
 import com.youwiz.springbatchn1.domain.StoreHistory;
 import lombok.RequiredArgsConstructor;
@@ -74,6 +76,82 @@ public class StoreBackupBatchConfiguration {
                 .transacted(false)
                 .build();
     }
+
+//    @Bean
+//    @StepScope
+//    public JpaPagingFetchItemReader<Store> reader(
+//            @Value("#{jobParameters[address]}") String address) {
+//
+//        Map<String, Object> parameters = new LinkedHashMap<>();
+//        parameters.put("address", address + "%");
+//
+//        JpaPagingFetchItemReader<Store> reader = new JpaPagingFetchItemReader<>();
+//        reader.setEntityManagerFactory(entityManagerFactory);
+//        reader.setQueryString("SELECT s FROM Store s WHERE s.address LIKE :address order by s.id");
+//        reader.setParameterValues(parameters);
+//        reader.setPageSize(chunkSize);
+//
+//        return reader;
+//    }
+
+
+
+//    @Bean
+//    @StepScope
+//    public QuerydslPagingItemReader<Store> reader(@Value("#{jobParameters[address]}") String address){
+//        return new QuerydslPagingItemReader<>(entityManagerFactory, chunkSize, queryFactory -> {
+//            // 요청 시간 기준으로 만료 기간이 지났지만, "적립" 포인트가 남아있는 경우 조회
+//            return queryFactory
+//                    .selectFrom(store)
+//                    .where(store.address.like(address+"%"));
+//        });
+//    }
+
+//    @Bean
+//    @StepScope
+//    public QuerydslCursorItemReader<Store> reader(@Value("#{jobParameters[address]}") String address){
+//        return new QuerydslCursorItemReader<>(entityManagerFactory, chunkSize, queryFactory -> {
+//            // 요청 시간 기준으로 만료 기간이 지났지만, "적립" 포인트가 남아있는 경우 조회
+//            return queryFactory
+//                    .selectFrom(store)
+//                    .where(store.address.like(address+"%"));
+//        });
+//    }
+
+//    @Bean
+//    @StepScope
+//    public HibernateCursorItemReader<Store> reader(@Value("#{jobParameters[address]}") String address) {
+//        Map<String, Object> parameters = new LinkedHashMap<>();
+//        parameters.put("address", address+"%");
+//        SessionFactory sessionFactory = entityManagerFactory.unwrap(SessionFactory.class);
+//
+//        HibernateCursorItemReader<Store> reader = new HibernateCursorItemReader<>();
+//        reader.setQueryString("FROM Store s WHERE s.address LIKE :address");
+//        reader.setParameterValues(parameters);
+//        reader.setSessionFactory(sessionFactory);
+//        reader.setFetchSize(chunkSize);
+//        reader.setUseStatelessSession(false);
+//
+//        return reader;
+//    }
+
+    //    @Bean
+//    @StepScope
+//    public HibernatePagingItemReader<Store> reader(@Value("#{jobParameters[address]}") String address) {
+//        Map<String, Object> parameters = new LinkedHashMap<>();
+//        parameters.put("address", address + "%");
+//        SessionFactory sessionFactory = entityManagerFactory.unwrap(SessionFactory.class);
+//
+//        HibernatePagingItemReader<Store> reader = new HibernatePagingItemReader<>();
+//        reader.setQueryString("FROM Store s WHERE s.address LIKE :address");
+//        reader.setParameterValues(parameters);
+//        reader.setSessionFactory(sessionFactory);
+//        reader.setFetchSize(chunkSize);
+//        reader.setUseStatelessSession(false);
+//
+//        return reader;
+//    }
+
 
 
     @Value("${chunkSize:2}")
